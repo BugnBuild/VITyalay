@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #322e2e;
+    background-color: #c8dada;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f48024;
+    padding: 1rem;
+    color: white;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header .logo span {
+    color: #333;
+}
+
+nav a {
+    color: white;
+    margin-right: 1rem;
+    text-decoration: none;
+}
+
+h1 {
+    margin: 1.5rem;
+    color: #121111;
+}
+
+/* Main Content */
+.container {
+    display: grid;
+    grid-template-columns: 50fr 25fr;
+    gap: 10rem;
+    margin: 5rem 7rem;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin: 0.5rem 0 0.2rem;
+}

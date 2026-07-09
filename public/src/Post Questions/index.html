@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <h1>Question Bank</h1>
+
+        <div class="container">
+            <!-- Question Form -->
+            <form id="question-form">
+                <div class="form-container">
+                    <label for="title">Title*</label>
+                    <input type="text" id="title" placeholder="Subject or Course the problem is related to(not mor than 50 characters) " required>
+
+                    <label for="body">Body*</label>
+                    <textarea id="body" placeholder="Include all the information someone would need to answer your question" required></textarea>
+
+                    <button type="submit" id="submit">Question Bank</button>
+                </div>
+            </form>
+
+            <!-- Sidebar Steps -->
+            <div class="sidebar">
+                <h3>Follow these steps to post your question:</h3>
+                <ul>
+                    <li><strong>Summarize the problem</strong>
+                        <ul>
+                            <li>Include details about your goal</li>
+                            <li>Describe expected and actual results</li>
+                            
+                        </ul>
+                    </li>
+                    <li><strong>Post the image of the problem coming</strong></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

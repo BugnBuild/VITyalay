@@ -1,0 +1,138 @@
+.header {
+  width: 100%;
+  height: 72px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navigation {
+  height: 72px;
+}
+
+.logo h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #6c47ff, #ff6b35);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.5px;
+  line-height: 72px;
+}
+
+.nav_list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  column-gap: 0.5rem;
+  align-items: center;
+}
+
+.nav_item a {
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #374151;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.nav_item a:hover {
+  color: #6c47ff;
+  background: #f0ebff;
+}
+
+.nav_item a.active {
+  color: #6c47ff;
+  font-weight: 600;
+  background: #f0ebff;
+}
+
+.btn-sign_in {
+  background: linear-gradient(135deg, #6c47ff, #4f2fe0);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 22px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(108, 71, 255, 0.35);
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.btn-sign_in:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 22px rgba(108, 71, 255, 0.5);
+  color: #fff;
+}
+
+.mobile_menu {
+  display: none;
+}
+
+.mobile_menu span i {
+  font-size: 1.4rem;
+  color: #374151;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 991px) {
+  .nav_menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(13, 0, 16, 0.7);
+    z-index: 99;
+    display: none;
+  }
+
+  .nav_list {
+    position: absolute;
+    background-color: #fff;
+    top: 0;
+    right: 0;
+    width: 260px;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 999;
+    padding: 100px 24px 40px;
+    gap: 8px;
+    box-shadow: -4px 0 30px rgba(0,0,0,0.15);
+  }
+
+  .nav_item a {
+    font-size: 1.1rem;
+    padding: 12px 20px;
+    width: 100%;
+    display: block;
+  }
+
+  .mobile_menu {
+    display: block;
+  }
+
+  .nav_right {
+    display: none;
+  }
+
+  .active_menu {
+    display: block;
+  }
+}
